@@ -1,0 +1,87 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500px;
+    background: url(https://i.imgur.com/GWAhfv3.jpg);
+
+    
+}
+
+fieldset {
+    border: 1px green solid;
+    }
+
+a {
+color: lime;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+textarea {
+border: border: 2px green solid;
+}
+
+.green {
+color:green;
+}
+
+input[type=text], input[type=number] {
+    border: 1px solid green;
+}
+input[type=text]:focus, input[type=number]:focus {outline:0;}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #1a1a1c;
+    font-weight: bold;
+    border: 3px solid green;
+    font-size:15px;
+    color: green;
+    padding: 4px 8px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    border: 3px solid lime;
+    color: lime;
+}
+
+.center {
+    /*die border staat erg mooi op de table dus laat dat maar gewoon met rust en gebruik text-align om te centeren*/
+    margin: auto;
+    width: 50%;
+    outline: 3px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color:green;
+    text-align:center;
+}
+
+<<<<<<< HEAD
+.feet {
+font-size:6px;
+color:green;
+=======
+@media screen and (max-width: 480px ) {
+.center {
+    /*die border staat erg mooi op de table dus laat dat maar gewoon met rust en gebruik text-align om te centeren*/
+    outline: 0px;
+>>>>>>> 3894d836c8cf4bd3196d62087d62e8b0a004765e
+}
+}

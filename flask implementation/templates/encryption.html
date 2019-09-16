@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Encrypt text with otp encryption">
+    <meta name="keywords" content="Encryption,OTP,English,Decryption">
+	<meta name="copyright" content="Made by Quinten Cabo,
+        © 2018. All rights reserved.">
+	<meta name="reply-to" content="tintin10q@hotmail.com" />
+	<meta name="language" content="english" />
+	<meta name="reply-to" content="email adres">
+	<meta name="author" content="Quinten Cabo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OTP Encryption and Decryption</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/ROXA598.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+<body>
+<ul>
+    <li><h1>Encryption</h1></li>
+</ul>
+<form action = "." method = "post" class="center">
+        <div class="green">
+            <fieldset>
+                <ul>
+                    <li><legend><b>Input:</b></legend></li>
+                    <br>
+                    <li>Input text: <input type = "text" name = "input_string" required value="{{old_input}}" autofocus /></li>
+                    <li>Input key: <input type = "number" name = "key" value="{{key}}" required/></li>
+                    <li>Power: <input type="number" min=1 max=99 name="power" value={{last_power}} id="power"/></li>
+                    <br>
+                    <li><input type="radio" name="e_or_d" value="encrypt" required> Encrypt</li>
+                    <li><input type="radio" name="e_or_d" value="decrypt" required> Decrypt</li>
+                    <br>
+                    <li><input type = "submit" value = "Submit" /></li>
+                </ul>
+            </fieldset>
+        </div>
+</form>
+<br>
+<div class="green">
+    <div class="center">
+
+        <fieldset>
+        <ul>
+            <li><b>Output:</b></li>
+            <br>
+            <li><textarea name="textoutput" cols="40" rows="5" >{{finish}}</textarea><li>
+            <br>
+            <li><a href="https://en.wikipedia.org/wiki/One-time_pad">"How does it work?"</a></li>
+        </ul>
+            </fieldset>
+    </div>
+
+	<br><br><br>
+    <div class="feet">
+
+    <br><br><br><br>
+
+    <div>
+
+		Made by Quinten Cabo
+        © 2018. All rights reserved. 
+    </div>
+</div>
+</body>
+</html>
